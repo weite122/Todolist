@@ -1,0 +1,59 @@
+.TodoItem{
+    padding: .5em;
+    display: flex;
+    align-items: center;
+}
+.TodoItem>.title{
+    flex-grow: 1;
+    padding: 0 .5em;
+}
+.TodoItem .deleteInput{
+  border: 1px solid #e9e4d7;;
+  padding: 2px 10px;
+  display: block;
+  background:#fff;
+}
+.TodoItem .deleteInput:hover{
+  color: #fff;
+  background-color:#4fbe79;
+}
+.TodoItem .deleteInput:active{
+  color: #fff;
+  background-color:#42895d;
+}
+.TodoItem .flatRoundedCheckbox {
+  width: 60px;
+  height: 20px;
+  position: relative;
+}
+
+.TodoItem .flatRoundedCheckbox div {
+  width: 100%;
+  height: 100%;
+  background: #d3d3d3;
+  border-radius: 20px;
+  position: relative;
+  top: -18px;
+}
+
+.TodoItem .flatRoundedCheckbox label {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  background: #FFF;
+  z-index: 1;
+}
+
+.TodoItem .flatRoundedCheckbox input[type=checkbox]:checked~div {
+  background: #4fbe79;
+}
+
+.TodoItem .flatRoundedCheckbox input[type=checkbox]:checked~label {
+  left: 42px;
+} 
