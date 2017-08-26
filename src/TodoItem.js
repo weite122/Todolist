@@ -18,7 +18,7 @@ export default class TodoItem extends Component {
         <div></div>
         </div>
         <span className="title">{this.props.todo.title}</span>
-      <button className="deleteInput" onClick={this.delete.bind(this)}>删除</button>
+      <button className="deleteInput" onClick={this.delete.bind(this)}>×</button>
       </div>
     )
   }
