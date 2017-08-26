@@ -10,7 +10,7 @@
 .TodoItem .deleteInput{
   padding: 5px;
   display: block;
-  background:#eee;
+  background:transparent;
   border: none;
   outline:none;
 }
