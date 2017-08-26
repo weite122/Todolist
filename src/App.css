@@ -12,6 +12,9 @@
 .App> .todoList> li:nth-child(odd){
   background: #eee;
 }
+.App> .todoList{
+  margin-bottom:1em;
+}
 .App> .todoList> li:nth-child(even){
   background: transparent;
 }
